@@ -8,6 +8,7 @@ import {
 import Paper from "@material-ui/core/Paper";
 import Iconlight from "./Icon/light_icon";
 import IconTV from "./Icon/tv_icon";
+import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -35,24 +36,19 @@ export default function SimplePaper() {
   return (
     <div>
       <span className={classes.root}>
-        <Paper className={classes.paperelement} elevation={5}>
+        <Paper className={classes.paperelement} elevation={4}>
           <Iconlight />
         </Paper>
-        <Paper className={classes.paperelement} elevation={5}>
+        <Paper className={classes.paperelement} elevation={4}>
           <IconTV />
+          <Typography align="center" variant="h4" color="primary" gutterBottom>
+            SmartTV
+          </Typography>
         </Paper>
       </span>
       <span className={classes.root} style={{ marginTop: 0 }}>
-        <Paper className={classes.paperelement} elevation={5}></Paper>
-        <Paper className={classes.paperelement} elevation={5}></Paper>
-      </span>
-      <span className={classes.root} style={{ marginTop: 0 }}>
-        <Paper className={classes.paperelement} elevation={5}></Paper>
-        <Paper className={classes.paperelement} elevation={5}></Paper>
-      </span>
-      <span className={classes.root} style={{ marginTop: 0 }}>
-        <Paper className={classes.paperelement} elevation={5}></Paper>
-        <Paper className={classes.paperelement} elevation={5}></Paper>
+        <Paper className={classes.paperelement} elevation={4}></Paper>
+        <Paper className={classes.paperelement} elevation={4}></Paper>
       </span>
     </div>
   );
