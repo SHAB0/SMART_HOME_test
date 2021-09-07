@@ -59,8 +59,9 @@ export default function Iconlight() {
         variant="h4"
         color="primary"
       >
-        Light
+        Кімната
       </Typography>
+
       <Typography align="center" variant="subtitle1" color="textPrimary">
         temp: {led1} °C
       </Typography>

@@ -22,6 +22,7 @@ export default function BasicTextFields() {
     if (e.target.value == pass) {
       bodyEl.style.display = "block";
       document.getElementById("form-basic").style.display = "none";
+      document.getElementById("app-bar-id").style.justifyContent = "center";
     }
   };
   const classes = useStyles();

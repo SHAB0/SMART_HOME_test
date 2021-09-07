@@ -2,3 +2,7 @@
   font-family: sans-serif;
   text-align: center;
 }
+#app-bar-id {
+  display: flex;
+  justify-content: space-between;
+}

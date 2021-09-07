@@ -16,13 +16,13 @@ const useStyles = makeStyles((theme: Theme) =>
 
       "& > *": {
         margin: theme.spacing(2),
-        width: theme.spacing(30),
-        height: theme.spacing(20),
-        backgroundColor: "#e8eaf6"
+        width: theme.spacing(60),
+        height: theme.spacing(9),
+        backgroundColor: "#e0e0e0"
       }
     },
     paperelement: {
-      borderRadius: "5%"
+      borderRadius: "4"
     }
   })
 );
@@ -34,18 +34,13 @@ export default function SimplePaper() {
     <div id="body-element">
       <span className={classes.root}>
         <Paper
-          style={{ backgroundColor: "#4caf50" }}
+          //style={{ backgroundColor: "#4caf50" }}
           className={classes.paperelement}
-          elevation={4}
         >
           <Iconlight />
         </Paper>
-        <Paper className={classes.paperelement} elevation={4}>
-          <IconTV />
-        </Paper>
       </span>
       <span className={classes.root} style={{ marginTop: 0 }}>
-        <Paper className={classes.paperelement} elevation={4}></Paper>
         <Paper className={classes.paperelement} elevation={4}></Paper>
       </span>
     </div>
