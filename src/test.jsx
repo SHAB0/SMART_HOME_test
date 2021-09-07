@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
       }
     },
     paperelement: {
-      borderRadius: "15%"
+      borderRadius: "5%"
     }
   })
 );
