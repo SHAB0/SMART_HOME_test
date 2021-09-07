@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     icondelite: {
       color: "#0d47a1",
-      padding: "2vw"
+      padding: "3vw"
     }
   })
 );
