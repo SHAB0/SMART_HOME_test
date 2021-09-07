@@ -17,16 +17,16 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function BasicTextFields() {
   const handleChange = (e) => {
     const bodyEl = document.getElementById("body-element");
-    const pass = "pass";
+    const pass = "Pass";
     console.log(e.target.value);
     if (e.target.value == pass) {
       bodyEl.style.display = "block";
-      document.getElementById("outlined-basic").value = "";
+      document.getElementById("form-basic").style.display = "none";
     }
   };
   const classes = useStyles();
   return (
-    <form className={classes.root} noValidate autoComplete="on">
+    <form id="form-basic" className={classes.root} noValidate autoComplete="on">
       <TextField
         onChange={handleChange}
         id="outlined-basic"

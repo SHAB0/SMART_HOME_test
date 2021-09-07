@@ -33,7 +33,11 @@ export default function SimplePaper() {
   return (
     <div id="body-element">
       <span className={classes.root}>
-        <Paper className={classes.paperelement} elevation={4}>
+        <Paper
+          style={{ backgroundColor: "#4caf50" }}
+          className={classes.paperelement}
+          elevation={4}
+        >
           <Iconlight />
         </Paper>
         <Paper className={classes.paperelement} elevation={4}>

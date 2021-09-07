@@ -26,10 +26,15 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     icondelite: {
       color: "#0d47a1",
-      padding: "10%"
+      padding: "6%"
     },
     centrtext: {
       display: "inline-grid"
+    },
+    text1: {
+      padding: "10%",
+      marginTop: "-30%",
+      marginLeft: "10%"
     }
   })
 );
@@ -48,8 +53,16 @@ export default function Iconlight() {
   return (
     <Container>
       <WbIncandescentIcon className={classes.icondelite} />
-      <Typography align="center" variant="h4" color="primary">
-        {led1}
+      <Typography
+        className={classes.text1}
+        align="center"
+        variant="h4"
+        color="primary"
+      >
+        Light
+      </Typography>
+      <Typography align="center" variant="subtitle1" color="textPrimary">
+        temp: {led1} °C
       </Typography>
     </Container>
   );
