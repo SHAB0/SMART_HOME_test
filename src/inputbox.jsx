@@ -15,19 +15,16 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 export default function BasicTextFields() {
-  const [user, setUser] = useState();
-  const handleChange = () => {
-    setUser(document.getElementById("outlined-basic").value);
+  const handleChange = (e) => {
     const bodyEl = document.getElementById("body-element");
     const pass = "pass";
-    console.log(user);
-    if (user == pass) {
+    console.log(e.target.value);
+    if (e.target.value == pass) {
       bodyEl.style.display = "block";
       document.getElementById("outlined-basic").value = "";
     }
   };
   const classes = useStyles();
-
   return (
     <form className={classes.root} noValidate autoComplete="on">
       <TextField
